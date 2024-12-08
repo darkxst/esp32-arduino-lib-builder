@@ -43,6 +43,7 @@ if [ ! -x $idf_was_installed ] || [ ! -x $commit_predefined ]; then
 	patch -p1 -N -i $AR_PATCHES/mmu_map.diff
 	patch -p1 -N -i $AR_PATCHES/lwip_max_tcp_pcb.diff
 	patch -p1 -N -i $AR_PATCHES/esp32c6_provisioning_bluedroid.diff
+	patch -p1 -N -i $AR_PATCHES/esp_modem_a7670_cmux_exit.diff
 	cd -
 fi
 
